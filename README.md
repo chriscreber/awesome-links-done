@@ -9,6 +9,9 @@ npx prisma studio
 
 --- To use proxy
 npx prisma generate --data-proxy
+--- To get rid of proxy (might be a better way to do it)
+npx prisma generate
+npx prisma migrate dev --name init
 
 
 pg_dump -f my-dump.sql postgresql://postgres:postgres@localhost:5432/mydb
