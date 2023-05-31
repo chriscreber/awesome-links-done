@@ -4,7 +4,7 @@ import { PrismaClient } from '@prisma/client'
 let prisma: PrismaClient;
 
 declare global {
-  var prisma: PrismaClient | undefined;
+  var prisma: PrismaClient;
 }
 console.log("in prisma file");
 // console.log(process);
