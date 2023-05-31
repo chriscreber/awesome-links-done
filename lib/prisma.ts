@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
   prisma = global.prisma
 }
 
-console.log(prisma);
-console.log(new PrismaClient());
+// console.log(prisma);
+// console.log(new PrismaClient());
 
 export default prisma
