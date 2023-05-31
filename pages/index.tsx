@@ -30,6 +30,8 @@ const AllLinksQuery = gql`
 
 function Home() {
   const { user } = useUser()
+  console.log(`user: ${user}`)
+  console.log()
   const { data, loading, error, fetchMore } = useQuery(AllLinksQuery, {
     variables: { first: 3 },
   });
