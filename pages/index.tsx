@@ -6,6 +6,9 @@ import type { Link as Node } from "@prisma/client";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0/client";
 
+// will remove, just testing
+import prisma from "../lib/prisma";
+
 const AllLinksQuery = gql`
   query allLinksQuery($first: Int, $after: ID) {
     links(first: $first, after: $after) {
@@ -34,6 +37,8 @@ function Home() {
   console.log(process);
   console.log(process.env);
   console.log(process.env.NODE_ENV);
+  console.log(process.env.NODE_ENV === 'production')
+  console.log(prisma)
   console.log(`user: ${user}`)
   console.log()
   const { data, loading, error, fetchMore } = useQuery(AllLinksQuery, {
