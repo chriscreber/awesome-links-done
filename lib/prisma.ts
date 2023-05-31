@@ -1,10 +1,10 @@
 // /lib/prisma.ts
 import { PrismaClient } from '@prisma/client'
 
-let prisma: PrismaClient | undefined;
+let prisma: PrismaClient;
 
 declare global {
-  var prisma: PrismaClient;
+  var prisma: PrismaClient | undefined;
 }
 console.log("in prisma file");
 // console.log(process);
