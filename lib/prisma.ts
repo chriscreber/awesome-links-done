@@ -10,8 +10,6 @@ console.log("in prisma file");
 // console.log(process);
 // console.log(process.env);
 console.log(process.env.NODE_ENV);
-console.log(prisma);
-console.log(new PrismaClient());
 
 if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient()
@@ -21,4 +19,8 @@ if (process.env.NODE_ENV === 'production') {
   }
   prisma = global.prisma
 }
+
+console.log(prisma);
+console.log(new PrismaClient());
+
 export default prisma
