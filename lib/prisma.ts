@@ -6,7 +6,7 @@ let prisma: PrismaClient;
 declare global {
   var prisma: PrismaClient;
 }
-
+console.log("in prisma file");
 console.log(process);
 console.log(process.env);
 console.log(process.env.NODE_ENV);

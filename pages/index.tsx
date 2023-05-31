@@ -30,6 +30,10 @@ const AllLinksQuery = gql`
 
 function Home() {
   const { user } = useUser()
+  console.log("in index file");
+  console.log(process);
+  console.log(process.env);
+  console.log(process.env.NODE_ENV);
   console.log(`user: ${user}`)
   console.log()
   const { data, loading, error, fetchMore } = useQuery(AllLinksQuery, {
