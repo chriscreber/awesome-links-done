@@ -27,4 +27,4 @@ console.log(3);
 console.log(4);
 // console.log(new PrismaClient());
 
-export default prisma
+export default new PrismaClient()
