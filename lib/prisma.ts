@@ -26,5 +26,5 @@ console.log(3);
 // console.log(prisma);
 console.log(4);
 // console.log(new PrismaClient());
-prisma = new PrismaClient();
+
 export default prisma
