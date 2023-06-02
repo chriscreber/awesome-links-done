@@ -25,6 +25,7 @@ if (process.env.NODE_ENV === 'production') {
 console.log(3);
 // console.log(prisma);
 console.log(4);
+
 // console.log(new PrismaClient());
 
 export default prisma
