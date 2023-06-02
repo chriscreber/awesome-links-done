@@ -2,6 +2,7 @@
 import { PrismaClient } from '@prisma/client'
 
 let prisma: PrismaClient;
+let prisma2: PrismaClient;
 
 declare global {
   var prisma: PrismaClient;
@@ -11,6 +12,8 @@ console.log("in prisma file");
 // console.log(process.env);
 console.log(process.env.NODE_ENV);
 console.log(1);
+prisma2 = new PrismaClient();
+console.log(prisma2)
 // console.log(new PrismaClient());
 console.log(2);
 
