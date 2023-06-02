@@ -14,15 +14,14 @@ console.log(1);
 // console.log(new PrismaClient());
 console.log(2);
 
-// if (process.env.NODE_ENV === 'production') {
-//   prisma = new PrismaClient()
-// } else {
-//   if (!global.prisma) {
-//     global.prisma = new PrismaClient()
-//   }
-//   prisma = global.prisma
-// }
-prisma = new PrismaClient()
+if (process.env.NODE_ENV === 'production') {
+  prisma = new PrismaClient()
+} else {
+  if (!global.prisma) {
+    global.prisma = new PrismaClient()
+  }
+  prisma = global.prisma
+}
 console.log(3);
 // console.log(prisma);
 console.log(4);

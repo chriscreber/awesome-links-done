@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "vercel-build": "npm ls prisma && npx prisma migrate deploy && npx prisma generate --data-proxy && next build",
-    "postinstall": "npm ls prisma && npx prisma generate --data-proxy",
+    "postinstall": "npm ls prisma && npx prisma generate --data-proxy && npm run generate",
     "prisma:generate": "npx prisma generate --data-proxy"
   },
   "dependencies": {
