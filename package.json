@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "npx prisma generate --data-proxy",
+    "postinstall": "npx prisma generate --data-proxy"
   },
   "dependencies": {
     "@apollo/client": "3.7.4",
