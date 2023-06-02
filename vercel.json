@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "prerender": {
+          "includeFiles": ["prisma/**"] // Include Prisma files in the build process
+        }
+      }
+    }
+  ]
+}
