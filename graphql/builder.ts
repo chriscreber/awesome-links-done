@@ -5,6 +5,9 @@ import prisma from "../lib/prisma";
 import RelayPlugin from "@pothos/plugin-relay";
 import {createContext} from './context'
 
+console.log('builder');
+console.log(prisma);
+console.log('after prisma');
 export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes,
   Context: ReturnType<typeof createContext>,
